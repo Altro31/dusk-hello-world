@@ -8,6 +8,8 @@ def word_counter(text: str | list[str]):
     if type(text) == list:
         text = ''.join(text)
 
+    print(f"🚀 Dashboard at http://127.0.0.1:8787/status")
+
     cluster = LocalCluster()
     client = cluster.get_client()
 
